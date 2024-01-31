@@ -1,0 +1,25 @@
+<div class="b-table">
+    <h1>Product Cart</h1>
+    <table>
+        <thead>
+          <tr>
+            <th>Detail</th>
+            <th>Quantity</th>
+            <th>Status</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (cart of Cart; track cart) {
+            <tr>
+                <td>{{cart.detail}}</td>
+                <td>{{cart.quantity}}</td>
+                <td>{{cart.status}}</td>
+                <td>{{cart.price}}</td>
+            </tr>
+          }
+          
+        </tbody>
+      </table>
+      
+</div>

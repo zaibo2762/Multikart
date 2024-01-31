@@ -1,0 +1,100 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.s-card{
+    margin-left: 200px;
+    margin-top: 20px;
+    background-color: aliceblue;
+    height: 550px;
+    width: 450px;
+    border-radius: 10px;
+}
+.title{
+    padding-top: 3px;
+    padding-left: 20px;
+}
+.image{
+    margin-left: 5px;
+    display: flex;
+    font-size:x-large;
+    font-weight: bold;
+}
+.image h4{
+    margin-left: 20px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    margin-top: 80px;
+    margin-left: 20px;
+}
+.icon{
+    margin-top: 100px;
+    background-color: palevioletred;
+    height: 50px;
+    width: 50px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.icon svg{
+    margin-top: 12px;
+    margin-left: 12px;
+}
+.p-card{
+    background-color: aliceblue;
+    height: 550px;
+    width: 450px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 0px;
+    /* margin-left: 30px; */
+    
+}
+.p-card .icon {
+    margin-top: 100px;
+    background-color: skyblue;
+    height: 50px;
+    width: 50px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.t-card{
+    margin-left: 200px;
+    margin-top: 20px;
+    background-color: aliceblue;
+    height: 550px;
+    width: 450px;
+    border-radius: 10px;
+}
+.t-card .icon{
+    margin-top: 100px;
+    background-color: orange;
+    height: 50px;
+    width: 50px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 20px;   
+}
+.d-card{
+    background-color: aliceblue;
+    height: 550px;
+    width: 450px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 0px;
+    
+}
+.d-card .icon{
+    margin-top: 100px;
+    background-color: gray;
+    height: 50px;
+    width: 50px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 20px;
+}
