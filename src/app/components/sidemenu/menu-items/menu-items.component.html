@@ -1,1 +1,21 @@
-<p>menu-items works!</p>
+<div class="side-menu">
+    <nav>
+        <ul>
+            @for (item of menuItems; track item) {
+            <li>
+                <div class="menu-item">
+                    <img src="{{item.icon}}" alt="logo">
+                    {{item.name}}
+                </div>
+                @if (item.children) {
+                    <ul>
+                        @for (child of item.children; track child) {
+                            <li class="child"><a >{{child.name}}</a></li>
+                        }
+                    </ul>
+                }
+                </li>
+            }
+        </ul>
+    </nav>
+</div>

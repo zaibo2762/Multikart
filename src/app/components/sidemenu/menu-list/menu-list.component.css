@@ -1,7 +1,14 @@
 .menu-list{
-    position: fixed;
-    background-color: antiquewhite;
-    height: 100%;
+    position:fixed;
+    left: 0px;
+    margin-top: 60px;
+    background-color: white;
+    height: 90%;
     width: 220px;
-    top: 80px;
+    margin-left: 9px;
+    overflow-y: scroll;
+    /* display: flex;
+    flex: 1;
+    flex-direction: column; */
+    /* top: 60px; */
 }

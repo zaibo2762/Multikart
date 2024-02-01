@@ -1,12 +1,15 @@
 .profile{
     margin-left: 30px;
-    margin-top: 60px;
-    position: fixed;
+    margin-top: 20px;
+    /* position: fixed; */
+
+
     
 }
 .profile img{
     border: 1px solid #eff0f1;
     border-radius: 50%;
+    margin-top: 20px;
 }
 .profile h3{
     color: palevioletred;
@@ -16,8 +19,9 @@
     font-size: medium;
 }
 .container{
-    border: 1px;
-    border-style: inherit;
+    
+    
     height: 200px;
-    border-color: palevioletred;
+    
+    
 }
