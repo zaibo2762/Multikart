@@ -5,12 +5,13 @@
             <li>
                 <div class="menu-item">
                     <img src="{{item.icon}}" alt="logo">
-                    {{item.name}}
+                    <a [routerLink]="item.path">{{item.name}}</a>
                 </div>
                 @if (item.children) {
                     <ul>
                         @for (child of item.children; track child) {
-                            <li class="child"><a >{{child.name}}</a></li>
+                            <li class="child"><a [routerLink]="child.path">{{child.name}}</a></li>
+                            
                         }
                     </ul>
                 }

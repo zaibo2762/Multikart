@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="title">
+        <h1>Media</h1>
+        <h5>Multicart Admin Panel</h5>
+    </div>
+    <div class="around">
+        <div class="m-order">
+            <h2>Dropzone Media</h2>
+        </div>
+        <div class="pic">
+            <img #uploadIcon src="/assets/cloud-arrow-up-solid.svg" (click)="triggerFileUpload()" alt="icon" height="50px">
+             <input type="file" #fileInput (change)="onFileSelected($event)" style="display: none;">
+            <h1>Drop Files Here Or Click To Upload.</h1>
+        </div>
+    
+       
+    </div>
+</div>

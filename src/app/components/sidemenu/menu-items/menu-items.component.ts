@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -5,7 +6,7 @@ import {} from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-menu-items',
   standalone: true,
-  imports: [FontAwesomeModule,RouterLink],
+  imports: [FontAwesomeModule,RouterLink,CommonModule],
   templateUrl: './menu-items.component.html',
   styleUrl: './menu-items.component.css'
 })
@@ -13,7 +14,8 @@ export class MenuItemsComponent {
    menuItems=[
     {
       name:'Dashboard',
-      icon:"assets/house-solid.svg"
+      icon:"assets/house-solid.svg",
+      path:""
     },
     {
       name:'Products',
@@ -35,11 +37,11 @@ export class MenuItemsComponent {
       children:[
         {
           name:'Order',
-          path:"/orders"
+          path:"order"
         },
         {
           name:'Transaction',
-          path:""
+          path:"transaction"
         },
       ],
     },
@@ -49,11 +51,11 @@ export class MenuItemsComponent {
       children:[
         {
           name:'List Coupon',
-          path:""
+          path:"listCoupon"
         },
         {
           name:'Create Coupon',
-          path:""
+          path:"createCoupon"
         },
       ],
     },
@@ -64,17 +66,18 @@ export class MenuItemsComponent {
         {
           name:'List Pages',
 
-          path:""
+          path:"pagelist"
         },
         {
           name:'Create Pages',
-          path:""
+          path:"pagecreate"
         },
       ],
     },
     {
       name:'Media',
       icon:"/assets/camera-solid.svg",
+      path:"media"
     },
     {
       name:'Menu',

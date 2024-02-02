@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="title">
+        <h1>Orders</h1>
+        <h5>Multicart Admin Panel</h5>
+    </div>
+    <div class="around">
+        <div class="m-order">
+            <h2>Discount Coupon Details</h2>
+        </div>
+        <div class="form">
+            <form>
+
+                <div class="form-group">
+                    <label for="couponTitle">Coupon Title</label>
+                    <input type="text" class="form-control" id="couponTitle" formControlName="couponTitle"
+                        placeholder="Enter coupon title">
+                </div>
+                <div class="form-group">
+                    <label for="couponCode">Coupon Code</label>
+                    <input type="text" class="form-control" id="couponCode" formControlName="couponCode"
+                        placeholder="Enter coupon code">
+                </div>
+                <div class="form-group">
+                    <label for="startDate">Start Date</label>
+                    <input type="date" class="form-control" id="startDate" formControlName="startDate"
+                        >
+                </div>
+                <div class="form-group">
+                    <label for="endDate">End Date</label>
+                    <input type="date" class="form-control" id="endDate" formControlName="endDate"
+                        >
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="form-control" id="quantity" formControlName="quantity"
+                        >
+                </div>
+                <div class="form-group">
+                    <label for="discountType">Discount Type</label>
+                    <select id="discountType">
+                        <option value="select">Select</option>
+                        <option value="percent">Percent</option>
+                        <option value="fixed">Fixed</option>
+                        
+                      </select>
+                </div>
+
+            </form>
+            
+        </div>
+        <div class="btn">
+        <button type="button" >Save</button>
+    </div>
+    </div>
+</div>
