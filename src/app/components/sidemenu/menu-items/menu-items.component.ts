@@ -15,7 +15,7 @@ export class MenuItemsComponent {
     {
       name:'Dashboard',
       icon:"assets/house-solid.svg",
-      path:""
+      path:"dashboard"
     },
     {
       name:'Products',
@@ -85,11 +85,11 @@ export class MenuItemsComponent {
       children:[
         {
           name:'List Menu',
-          path:""
+          path:"listmenu"
         },
         {
           name:'Create Menu',
-          path:""
+          path:"createmenu"
         },
       ],
     },
@@ -99,11 +99,11 @@ export class MenuItemsComponent {
       children:[
         {
           name:'User List',
-          path:""
+          path:"userlist"
         },
         {
           name:'Create User',
-          path:""
+          path:"createuser"
         },
       ],
     },
@@ -113,11 +113,11 @@ export class MenuItemsComponent {
       children:[
         {
           name:'Vendor List',
-          path:""
+          path:"vendorlist"
         },
         {
           name:'Create vendor',
-          path:""
+          path:"createvendor"
         },
       ],
     },
@@ -127,22 +127,22 @@ export class MenuItemsComponent {
       children:[
         {
           name:'Translation',
-          path:""
+          path:"translation"
         },
         {
           name:'Currency rate',
-          path:""
+          path:"currencyrate"
         },
         {
           name:'Taxes',
-          path:""
+          path:"taxes"
         },
       ],
     },
     {
       name:'Reports',
       icon:"/assets/signal-solid.svg",
-
+      path:"reports"
     },
     {
       name:'Settings',
@@ -150,7 +150,7 @@ export class MenuItemsComponent {
       children:[
         {
           name:'Profile',
-          path:""
+          path:"profile"
         },
       ],
     },

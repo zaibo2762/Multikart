@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="title">
+        <h1>Translations</h1>
+        <h5>Multicart Admin Panel</h5>
+    </div>
+    <div class="around">
+        <div class="m-order">
+        <h2>Translations</h2>
+    </div>
+    
+    <div class="table">
+        <table>
+            <thead>
+              <tr>
+                <th>User KEY</th>
+                <th>Russian</th>
+                <th>Arab</th>
+                <th>English</th>
+                <th>Actions</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+                @for (trans of Trans; track trans) {
+              <tr>
+               <td>{{trans.userKey}}</td>
+               <td>{{trans.rus}}</td>
+               <td>{{trans.arab}}</td>
+               <td>{{trans.eng}}</td>
+                <td>
+                    <div class="icons">
+                        <img src="assets/pen-to-square-solid.svg" height="30px" alt="edit">
+                        <img src="assets/trash-solid.svg" height="30px" alt="edit">
+                    </div>
+                </td>
+              </tr>
+                }
+            </tbody>
+            </table>
+            
+    </div>
+    </div>
+    </div>

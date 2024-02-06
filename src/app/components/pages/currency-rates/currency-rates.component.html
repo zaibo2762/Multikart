@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="title">
+        <h1>Translations</h1>
+        <h5>Multicart Admin Panel</h5>
+    </div>
+    <div class="around">
+        <div class="m-order">
+        <h2>Translations</h2>
+    </div>
+    
+    <div class="table">
+        <table>
+            <thead>
+              <tr>
+                <th>Currency Tittle</th>
+                <th>USD</th>
+                <th>Code</th>
+                <th>Exchange Rate</th>
+                <th>Actions</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+                @for (curr of Currency; track curr) {
+              <tr>
+               <td>{{curr.title}}</td>
+               <td>{{curr.usd}}</td>
+               <td>{{curr.code}}</td>
+               <td>{{curr.exchange}}</td>
+                <td>
+                    <div class="icons">
+                        <img src="assets/pen-to-square-solid.svg" height="30px" alt="edit">
+                        <img src="assets/trash-solid.svg" height="30px" alt="edit">
+                    </div>
+                </td>
+              </tr>
+                }
+            </tbody>
+            </table>
+            
+    </div>
+    </div>
+    </div>
