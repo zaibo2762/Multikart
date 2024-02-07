@@ -5,40 +5,40 @@
     </div>
     <div class="around">
         <div class="m-order">
-        <h2>Menu Lists</h2>
-    </div>
-    <div class="dlt">
-        <button>DELETE</button>
-    </div>
-    <div class="table">
-        <table>
-            <thead>
-              <tr>
-                <th></th>
-                <th>Name</th>
-                <th>Status</th>
-                <th>Created On</th>
-              </tr>
-            </thead>
-            <tbody>
-                @for (item of MenuList; track item) {
-                <tr>
-                    <td><input type="checkbox"/></td>
-                    <td>{{item.name}}</td>
-                    <td class="circle-cell">
-                        <div class="circle" [style.backgroundColor]="item.color"></div>
-                    </td>
-                    <td>{{item.date}}</td>
-                </tr>
-            }
-            </tbody>
+            <h2>Menu Lists</h2>
+        </div>
+        <div class="dlt">
+            <button>DELETE</button>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>Created On</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (item of MenuList; track item) {
+                    <tr>
+                        <td><input type="checkbox" /></td>
+                        <td>{{item.name}}</td>
+                        <td class="circle-cell">
+                            <div class="circle" [style.backgroundColor]="item.color"></div>
+                        </td>
+                        <td>{{item.date}}</td>
+                    </tr>
+                    }
+                </tbody>
             </table>
             <div class="pagination">
-                <a >&laquo;</a>
-                <a  class="active">1</a>
-                
-                <a >&raquo;</a>
-              </div>
+                <a>&laquo;</a>
+                <a class="active">1</a>
+
+                <a>&raquo;</a>
+            </div>
+        </div>
     </div>
-    </div>
-    </div>
+</div>

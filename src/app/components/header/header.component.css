@@ -1,70 +1,64 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff; 
-    height: 80px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1;
-
-  }
-.logo{
-    display: flex;
-    margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
-.header_menu{
-    margin-left: 0px;
-    
+.logo {
+  display: flex;
+  margin-left: 10px;
 }
-.search-bar{
-    margin-left: 400px;
-    display: flex;
-    justify-items: center;
+.header_menu {
+  margin-left: 0px;
 }
-.search-bar input{
-    
-    border: 1px solid #eff0f1;
-    padding: 10px 10px 10px 70px;
-    border-radius: 50px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    background-color: #f8f8f9;
+.search-bar {
+  margin-left: 400px;
+  display: flex;
+  justify-items: center;
 }
-.search-bar svg{
-    /* width: 50px;
+.search-bar input {
+  border: 1px solid #eff0f1;
+  padding: 10px 10px 10px 70px;
+  border-radius: 50px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: #f8f8f9;
+}
+.search-bar svg {
+  /* width: 50px;
     height: 50px; */
-    border: 1px solid #eff0f1;
-    padding: 10px 10px 10px 10px;
-    border-radius: 50px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    background-color: #f8f8f9;
+  border: 1px solid #eff0f1;
+  padding: 10px 10px 10px 10px;
+  border-radius: 50px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: #f8f8f9;
 }
-.lan{
-    display: flex;
-    justify-content: center;
+.lan {
+  display: flex;
+  justify-content: center;
 }
 
-.notify-msg{
-    display: flex;
-    justify-content: space-between;
-    width: 60px;
-
+.notify-msg {
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
 }
-.profile{
-    margin-right: 10px;
+.profile {
+  margin-right: 10px;
 }
-.profile img{
-    border: 1px solid #eff0f1;
-    border-radius: 50%;
+.profile img {
+  border: 1px solid #eff0f1;
+  border-radius: 50%;
 }
-svg{
-    color: palevioletred;
+svg {
+  color: palevioletred;
 }
-.menu-b{
-    all: unset;
+.menu-b {
+  all: unset;
 }
- 
-  

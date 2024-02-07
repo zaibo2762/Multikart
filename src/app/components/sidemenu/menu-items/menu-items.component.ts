@@ -6,162 +6,163 @@ import {} from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-menu-items',
   standalone: true,
-  imports: [FontAwesomeModule,RouterLink,CommonModule],
+  imports: [FontAwesomeModule, RouterLink, CommonModule],
   templateUrl: './menu-items.component.html',
-  styleUrl: './menu-items.component.css'
+  styleUrl: './menu-items.component.css',
 })
 export class MenuItemsComponent {
-   menuItems=[
+  menuItems = [
     {
-      name:'Dashboard',
-      icon:"assets/house-solid.svg",
-      path:"dashboard"
+      name: 'Dashboard',
+      icon: 'assets/house-solid.svg',
+      path: 'dashboard',
     },
     {
-      name:'Products',
-      icon:"assets/cube-solid.svg",
-      children:[
+      name: 'Products',
+      icon: 'assets/cube-solid.svg',
+      children: [
         {
-          name:'Physical',
-          path:""
+          name: 'Physical',
+          path: '',
         },
         {
-          name:'Digital',
-          path:""
+          name: 'Digital',
+          path: '',
         },
       ],
     },
     {
-      name:'Sales',
-      icon:"/assets/dollar-sign-solid.svg",
-      children:[
+      name: 'Sales',
+      icon: '/assets/dollar-sign-solid.svg',
+      children: [
         {
-          name:'Order',
-          path:"order"
+          name: 'Order',
+          path: 'order',
         },
         {
-          name:'Transaction',
-          path:"transaction"
-        },
-      ],
-    },
-    {
-      name:'Coupon',
-      icon:"/assets/tag-solid.svg",
-      children:[
-        {
-          name:'List Coupon',
-          path:"listCoupon"
-        },
-        {
-          name:'Create Coupon',
-          path:"createCoupon"
+          name: 'Transaction',
+          path: 'transaction',
         },
       ],
     },
     {
-      name:"Pages",
-      icon:"/assets/clipboard-regular.svg",
-      children:[
+      name: 'Coupon',
+      icon: '/assets/tag-solid.svg',
+      children: [
         {
-          name:'List Pages',
+          name: 'List Coupon',
+          path: 'listCoupon',
+        },
+        {
+          name: 'Create Coupon',
+          path: 'createCoupon',
+        },
+      ],
+    },
+    {
+      name: 'Pages',
+      icon: '/assets/clipboard-regular.svg',
+      children: [
+        {
+          name: 'List Pages',
 
-          path:"pagelist"
+          path: 'pagelist',
         },
         {
-          name:'Create Pages',
-          path:"pagecreate"
+          name: 'Create Pages',
+          path: 'pagecreate',
         },
       ],
     },
     {
-      name:'Media',
-      icon:"/assets/camera-solid.svg",
-      path:"media"
+      name: 'Media',
+      icon: '/assets/camera-solid.svg',
+      path: 'media',
     },
     {
-      name:'Menu',
-      icon:"/assets/bars-solid.svg",
-      children:[
+      name: 'Menu',
+      icon: '/assets/bars-solid.svg',
+      children: [
         {
-          name:'List Menu',
-          path:"listmenu"
+          name: 'List Menu',
+          path: 'listmenu',
         },
         {
-          name:'Create Menu',
-          path:"createmenu"
+          name: 'Create Menu',
+          path: 'createmenu',
         },
       ],
     },
     {
-      name:'Users',
-      icon:"/assets/user-plus-solid.svg",
-      children:[
+      name: 'Users',
+      icon: '/assets/user-plus-solid.svg',
+      children: [
         {
-          name:'User List',
-          path:"userlist"
+          name: 'User List',
+          path: 'userlist',
         },
         {
-          name:'Create User',
-          path:"createuser"
-        },
-      ],
-    },
-    {
-      name:'Vendor',
-      icon:"/assets/users-solid.svg",
-      children:[
-        {
-          name:'Vendor List',
-          path:"vendorlist"
-        },
-        {
-          name:'Create vendor',
-          path:"createvendor"
+          name: 'Create User',
+          path: 'createuser',
         },
       ],
     },
     {
-      name:'Localization',
-      icon:"/assets/chrome.svg",
-      children:[
+      name: 'Vendor',
+      icon: '/assets/users-solid.svg',
+      children: [
         {
-          name:'Translation',
-          path:"translation"
+          name: 'Vendor List',
+          path: 'vendorlist',
         },
         {
-          name:'Currency rate',
-          path:"currencyrate"
-        },
-        {
-          name:'Taxes',
-          path:"taxes"
+          name: 'Create vendor',
+          path: 'createvendor',
         },
       ],
     },
     {
-      name:'Reports',
-      icon:"/assets/signal-solid.svg",
-      path:"reports"
-    },
-    {
-      name:'Settings',
-      icon:"/assets/gear-solid.svg",
-      children:[
+      name: 'Localization',
+      icon: '/assets/chrome.svg',
+      children: [
         {
-          name:'Profile',
-          path:"profile"
+          name: 'Translation',
+          path: 'translation',
+        },
+        {
+          name: 'Currency rate',
+          path: 'currencyrate',
+        },
+        {
+          name: 'Taxes',
+          path: 'taxes',
         },
       ],
     },
     {
-      name:'Invoice',
-      icon:"/assets/file-invoice-solid.svg",
-
+      name: 'Reports',
+      icon: '/assets/signal-solid.svg',
+      path: 'reports',
     },
     {
-      name:'Log In',
-      icon:"/assets/right-to-bracket-solid.svg",
-    }
-   ]
+      name: 'Settings',
+      icon: '/assets/gear-solid.svg',
+      children: [
+        {
+          name: 'Profile',
+          path: 'profile',
+        },
+      ],
+    },
+    {
+      name: 'Invoice',
+      icon: '/assets/file-invoice-solid.svg',
+      path: 'invoice',
+    },
+    {
+      name: 'Log Out',
+      icon: '/assets/right-to-bracket-solid.svg',
+      path: 'login',
+    },
+  ];
 }

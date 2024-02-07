@@ -1,43 +1,43 @@
 <div class="container">
-    <div class="title">
-        <h1>Translations</h1>
-        <h5>Multicart Admin Panel</h5>
+  <div class="title">
+    <h1>Translations</h1>
+    <h5>Multicart Admin Panel</h5>
+  </div>
+  <div class="around">
+    <div class="m-order">
+      <h2>Translations</h2>
     </div>
-    <div class="around">
-        <div class="m-order">
-        <h2>Translations</h2>
-    </div>
-    
+
     <div class="table">
-        <table>
-            <thead>
-              <tr>
-                <th>Currency Tittle</th>
-                <th>USD</th>
-                <th>Percentage</th>
-                <th>Exchange Rate</th>
-                <th>Actions</th>
-                
-              </tr>
-            </thead>
-            <tbody>
-                @for (tax of Tax; track tax) {
-              <tr>
-               <td>{{tax.title}}</td>
-               <td>{{tax.usd}}</td>
-               <td>{{tax.per}}</td>
-               <td>{{tax.exchange}}</td>
-                <td>
-                    <div class="icons">
-                        <img src="assets/pen-to-square-solid.svg" height="30px" alt="edit">
-                        <img src="assets/trash-solid.svg" height="30px" alt="edit">
-                    </div>
-                </td>
-              </tr>
-                }
-            </tbody>
-            </table>
-            
+      <table>
+        <thead>
+          <tr>
+            <th>Currency Tittle</th>
+            <th>USD</th>
+            <th>Percentage</th>
+            <th>Exchange Rate</th>
+            <th>Actions</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          @for (tax of Tax; track tax) {
+          <tr>
+            <td>{{tax.title}}</td>
+            <td>{{tax.usd}}</td>
+            <td>{{tax.per}}</td>
+            <td>{{tax.exchange}}</td>
+            <td>
+              <div class="icons">
+                <img src="assets/pen-to-square-solid.svg" height="30px" alt="edit">
+                <img src="assets/trash-solid.svg" height="30px" alt="edit">
+              </div>
+            </td>
+          </tr>
+          }
+        </tbody>
+      </table>
+
     </div>
-    </div>
-    </div>
+  </div>
+</div>

@@ -1,29 +1,29 @@
 <div class="e-table">
-    <h1>Employee Status</h1>
-    <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Designation</th>
-            <th>Skill level</th>
-            <th>Experience</th>
-          </tr>
-        </thead>
-        <tbody>
-            @for (emp of Employee; track emp) {
-          <tr>
-            <td class="name">
-                <img src="{{emp.imgUrl}}" alt="pic"  height="50px" style="border-radius: 50%; "/>
-                <p>{{emp.name}}</p>
-            </td>
-            <td>{{emp.desig}}</td>
-            <td>
-              <progress id="file" value="{{emp.progress}}" max="100"> {{emp.progress}} </progress>
-            </td>
-            <td>{{emp.experience}}</td>
-          </tr>
-        }
-        </tbody>
-      </table>
-      
+  <h1>Employee Status</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Designation</th>
+        <th>Skill level</th>
+        <th>Experience</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (emp of Employee; track emp) {
+      <tr>
+        <td class="name">
+          <img src="{{emp.imgUrl}}" alt="pic" height="50px" style="border-radius: 50%; " />
+          <p>{{emp.name}}</p>
+        </td>
+        <td>{{emp.desig}}</td>
+        <td>
+          <progress id="file" value="{{emp.progress}}" max="100"> {{emp.progress}} </progress>
+        </td>
+        <td>{{emp.experience}}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+
 </div>

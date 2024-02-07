@@ -8,14 +8,14 @@
                     <a [routerLink]="item.path">{{item.name}}</a>
                 </div>
                 @if (item.children) {
-                    <ul>
-                        @for (child of item.children; track child) {
-                            <li class="child"><a [routerLink]="child.path">{{child.name}}</a></li>
-                            
-                        }
-                    </ul>
+                <ul>
+                    @for (child of item.children; track child) {
+                    <li class="child"><a [routerLink]="child.path">{{child.name}}</a></li>
+
+                    }
+                </ul>
                 }
-                </li>
+            </li>
             }
         </ul>
     </nav>

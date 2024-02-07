@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="title">
+    <h1>Translations</h1>
+    <h5>Multicart Admin Panel</h5>
+  </div>
+  <div class="around">
+    <div class="m-order">
+      <h2>Translations</h2>
+    </div>
+
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Invoices</th>
+            <th>Date</th>
+            <th>Shipping</th>
+            <th>Amount</th>
+            <th>Tax</th>
+            <th>Total</th>
+            <th>Actions</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          @for (invoice of Invoices; track invoice) {
+          <tr>
+            <td>{{invoice.id}}</td>
+            <td>{{invoice.num}}</td>
+            <td>{{invoice.date}}</td>
+            <td>{{invoice.ship}}</td>
+            <td>{{invoice.amount}}</td>
+            <td>{{invoice.tax}}</td>
+            <td>{{invoice.total}}</td>
+            <td>
+              <div class="icons">
+                <img src="assets/pen-to-square-solid.svg" height="30px" alt="edit">
+                <img src="assets/trash-solid.svg" height="30px" alt="edit">
+              </div>
+            </td>
+          </tr>
+          }
+        </tbody>
+      </table>
+      <div class="pagination">
+        <a>&laquo;</a>
+        <a class="active">1</a>
+        <a>2</a>
+        <a>3</a>
+
+        <a>&raquo;</a>
+      </div>
+
+    </div>
+  </div>
+</div>

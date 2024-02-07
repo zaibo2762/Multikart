@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MenuService {
   private isMenuVisible = new BehaviorSubject<boolean>(true);
@@ -11,5 +11,5 @@ export class MenuService {
   toggleMenu() {
     this.isMenuVisible.next(!this.isMenuVisible.value);
   }
-  constructor() { }
+  constructor() {}
 }

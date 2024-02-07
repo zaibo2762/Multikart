@@ -1,49 +1,49 @@
 <div class="container">
-    <div class="title">
-        <h1>Vendor List</h1>
-        <h5>Multicart Admin Panel</h5>
+  <div class="title">
+    <h1>Vendor List</h1>
+    <h5>Multicart Admin Panel</h5>
+  </div>
+  <div class="around">
+    <div class="m-order">
+      <h2>Vendor Details</h2>
     </div>
-    <div class="around">
-        <div class="m-order">
-        <h2>Vendor Details</h2>
-    </div>
-    
+
     <div class="table">
-        <table>
-            <thead>
-              <tr>
-                <th>Vendors</th>
-                <th>Products</th>
-                <th>Store Name</th>
-                <th>Date</th>
-                <th>Wallet</th>
-                <th>Revenue</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-                @for (vendor of Vendors; track vendor) {
-              <tr>
-                <td class="name">
-                    <img src="{{vendor.img}}" alt="pic"  height="50px" style="border-radius: 50%; "/>
-                    <p>{{vendor.name}}</p>
-                </td>
-                <td>{{vendor.products}}</td>
-                <td>{{vendor.s_name}}</td>
-                <td>{{vendor.date}}</td>
-                <td>{{vendor.w_balance}}</td>
-                <td>{{vendor.revenue}}</td>
-                <td>
-                    <div class="icons">
-                        <img src="assets/pen-to-square-solid.svg" height="30px" alt="edit">
-                        <img src="assets/trash-solid.svg" height="30px" alt="edit">
-                    </div>
-                </td>
-              </tr>
-            }
-            </tbody>
-            </table>
-            
+      <table>
+        <thead>
+          <tr>
+            <th>Vendors</th>
+            <th>Products</th>
+            <th>Store Name</th>
+            <th>Date</th>
+            <th>Wallet</th>
+            <th>Revenue</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (vendor of Vendors; track vendor) {
+          <tr>
+            <td class="name">
+              <img src="{{vendor.img}}" alt="pic" height="50px" style="border-radius: 50%; " />
+              <p>{{vendor.name}}</p>
+            </td>
+            <td>{{vendor.products}}</td>
+            <td>{{vendor.s_name}}</td>
+            <td>{{vendor.date}}</td>
+            <td>{{vendor.w_balance}}</td>
+            <td>{{vendor.revenue}}</td>
+            <td>
+              <div class="icons">
+                <img src="assets/pen-to-square-solid.svg" height="30px" alt="edit">
+                <img src="assets/trash-solid.svg" height="30px" alt="edit">
+              </div>
+            </td>
+          </tr>
+          }
+        </tbody>
+      </table>
+
     </div>
-    </div>
-    </div>
+  </div>
+</div>

@@ -18,82 +18,101 @@ import { CurrencyRatesComponent } from './components/pages/currency-rates/curren
 import { TaxesComponent } from './components/pages/taxes/taxes.component';
 import { ReportsComponent } from './components/pages/reports/reports.component';
 import { PProfileComponent } from './components/pages/p-profile/p-profile.component';
+import { InvoicesComponent } from './components/pages/invoices/invoices.component';
+import { LoginComponent } from './components/pages/login/login.component';
+import { RegisterComponent } from './components/pages/register/register.component';
 
 export const routes: Routes = [
-    {
-        path:"dashboard",
-        component:DashboardComponent
-    },
-    {
-        path:"order",
-        component:OrdersComponent
-    },
-    {
-        path:"transaction",
-        component:TransactionsComponent
-    },
-    {
-        path:"listCoupon",
-        component:ListCouponComponent
-    },
-    {
-        path:"createCoupon",
-        component:CreateCouponComponent
-    },
-    {
-        path:"pagelist",
-        component:ListPagesComponent
-    },
-    {
-        path:"pagecreate",
-        component:CreatePageComponent
-    },
-    {
-        path:"media",
-        component:MediaComponent
-    },
-    {
-        path:"listmenu",
-        component:ListMenuComponent
-    },
-    {
-        path:"createmenu",
-        component:CreateMenuComponent
-    },
-    {
-        path:"userlist",
-        component:UserListComponent
-    },
-    {
-        path:"createuser",
-        component:CreateUserComponent
-    },
-    {
-        path:"vendorlist",
-        component:VendorListComponent
-    },
-    {
-        path:"createvendor",
-        component:CreateVendorsComponent
-    },
-    {
-        path:"translation",
-        component:TranslationComponent
-    },
-    {
-        path:"currencyrate",
-        component:CurrencyRatesComponent
-    },
-    {
-        path:"taxes",
-        component:TaxesComponent
-    },
-    {
-        path:"reports",
-        component:ReportsComponent
-    },
-    {
-        path:"profile",
-        component:PProfileComponent
-    },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+  },
+  {
+    path: 'order',
+    component: OrdersComponent,
+  },
+  {
+    path: 'transaction',
+    component: TransactionsComponent,
+  },
+  {
+    path: 'listCoupon',
+    component: ListCouponComponent,
+  },
+  {
+    path: 'createCoupon',
+    component: CreateCouponComponent,
+  },
+  {
+    path: 'pagelist',
+    component: ListPagesComponent,
+  },
+  {
+    path: 'pagecreate',
+    component: CreatePageComponent,
+  },
+  {
+    path: 'media',
+    component: MediaComponent,
+  },
+  {
+    path: 'listmenu',
+    component: ListMenuComponent,
+  },
+  {
+    path: 'createmenu',
+    component: CreateMenuComponent,
+  },
+  {
+    path: 'userlist',
+    component: UserListComponent,
+  },
+  {
+    path: 'createuser',
+    component: CreateUserComponent,
+  },
+  {
+    path: 'vendorlist',
+    component: VendorListComponent,
+  },
+  {
+    path: 'createvendor',
+    component: CreateVendorsComponent,
+  },
+  {
+    path: 'translation',
+    component: TranslationComponent,
+  },
+  {
+    path: 'currencyrate',
+    component: CurrencyRatesComponent,
+  },
+  {
+    path: 'taxes',
+    component: TaxesComponent,
+  },
+  {
+    path: 'reports',
+    component: ReportsComponent,
+  },
+  {
+    path: 'profile',
+    component: PProfileComponent,
+  },
+  {
+    path: 'invoice',
+    component: InvoicesComponent,
+  },
+  {
+    path: 'login',
+    component: LoginComponent, 
+  },
+  {
+    path: '',
+    component: RegisterComponent, 
+  },
+  {
+    path: 'register',
+    component: RegisterComponent, 
+  },
 ];

@@ -10,10 +10,16 @@ import { EmployeeStatusComponent } from './employee-status/employee-status.compo
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [MarketValueComponent,LatestOrdersComponent,InfoComponent,SalesInfoComponent,BuySellComponent,ProductCartComponent,EmployeeStatusComponent],
+  imports: [
+    MarketValueComponent,
+    LatestOrdersComponent,
+    InfoComponent,
+    SalesInfoComponent,
+    BuySellComponent,
+    ProductCartComponent,
+    EmployeeStatusComponent,
+  ],
   templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.css'
+  styleUrl: './dashboard.component.css',
 })
-export class DashboardComponent {
-
-}
+export class DashboardComponent {}

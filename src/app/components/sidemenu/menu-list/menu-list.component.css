@@ -1,14 +1,14 @@
-.menu-list{
-    position:fixed;
-    left: 0px;
-    margin-top: 60px;
-    background-color: white;
-    height: 90%;
-    width: 220px;
-    margin-left: 9px;
-    overflow-y: scroll;
-    /* display: flex;
+.menu-list {
+  position: fixed;
+  left: 0px;
+  margin-top: 60px;
+  background-color: white;
+  height: 90%;
+  width: 220px;
+  margin-left: 9px;
+  overflow-y: scroll;
+  /* display: flex;
     flex: 1;
     flex-direction: column; */
-    /* top: 60px; */
+  /* top: 60px; */
 }

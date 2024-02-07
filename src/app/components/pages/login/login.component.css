@@ -1,0 +1,115 @@
+.container {
+  height: 590px;
+  width: 1340px;
+  /* background-color: gray; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail {
+  height: 400px;
+  width: 350px;
+  background-color: palevioletred;
+  border-radius: 3%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+.login {
+  height: 400px;
+  width: 500px;
+  background-color: white;
+  border-radius: 3%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+.icon {
+  margin-top: 60px;
+  margin-left: 130px;
+}
+.icon img {
+  border-radius: 50%;
+  border: 5px;
+}
+.wel {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  /* margin-top: 50px; */
+}
+.wel p {
+  margin-left: 50px;
+
+  /* margin-bottom: 20px; */
+  /* align-items: center; */
+}
+.log {
+  margin-top: 50px;
+  margin-left: 60px;
+  color: palevioletred;
+}
+.log input {
+  border: 2px solid #e7e7e7;
+  padding: 10px 10px 10px 70px;
+  border-radius: 50px;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  /* border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px; */
+  /* background-color: #a9a9b1; */
+  /* margin-left: 10px; */
+  margin-top: 10px;
+}
+.forget {
+  height: 30px;
+  width: 100%;
+  /* background-color: rgb(179, 80, 149); */
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.rem {
+  display: flex;
+  height: 20px;
+  width: 50%;
+}
+.rem input {
+  height: 40px;
+  margin-left: 70px;
+}
+.forget a {
+  margin-top: 15px;
+  color: palevioletred;
+}
+.btn {
+  /* background-color: palevioletred; */
+  margin-top: 10px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn button {
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 100px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: palevioletred;
+  color: white;
+  display: flex;
+}
+.btn button:hover {
+  background-color: pink;
+}
+.btn button:active {
+  background-color: palevioletred;
+}
+.btn a{
+  display: inline-block; /* Ensure basic visibility */
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Inherit color from parent */
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
