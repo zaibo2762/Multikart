@@ -1,0 +1,73 @@
+.chatbox {
+    position: fixed;
+    right: 10px;
+    margin-top: 70px;
+    background-color: white;
+    height: 90%;
+    width: 300px;
+    z-index: 1;
+
+    overflow-y: scroll;
+  }
+.friend{
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.friend svg{
+    height: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.input{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(255, 251, 248, 0.979);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.input input{
+    border: 1px solid #eff0f1;
+  padding: 10px 10px 10px 70px;
+  border-radius: 50px;
+  
+  background-color: #f8f8f9;
+}
+.info{
+    height: 100px;
+    width: 100%;
+    /* background-color: black; */
+    
+}
+.pic{
+    margin-left: 10px;
+    position: relative;
+}
+.pic img{
+    border-radius: 50%;
+    height: 70px;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+.info{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* .left{
+    display: flex;
+    flex-direction: column;
+} */
+.left p{
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+.green-dot {
+    position: absolute;
+    bottom: 22px; /* Adjust distance from bottom */
+    right: 5px; /* Adjust distance from right */
+    width: 10px; /* Adjust size */
+    height: 10px;
+    background-color: green;
+    border-radius: 50%; /* Make it a circle */
+  }

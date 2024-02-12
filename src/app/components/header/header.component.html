@@ -24,26 +24,92 @@
         <input type="search" placeholder="Search..">
     </div>
     <div class="lan">
-        <select name="Language">
-            <option value="EN" selected>English</option>
-            <option value="FR">French</option>
-            <option value="SP">Spanish</option>
-        </select>
+        <a style="color: palevioletred;" (mouseover)="tooglelan(true)" (mouseleave)="tooglelan(false)">EN</a>
+        @if (showlan) {
+        <div class="dropdown">
+            <div class="option">
+                <img src="assets/is.svg" alt="flag" height="20px">
+                <p>ENGLISH</p>
+            </div>
+            <div class="option">
+                <img src="assets/nz.svg" alt="flag" height="20px">
+                <p>SPANISH</p>
+            </div>
+            <div class="option">
+                <img src="assets/uy.svg" alt="flag" height="20px">
+                <p>PORTUGUEES</p>
+            </div>
+            <div class="option">
+                <img src="assets/um.svg" alt="flag" height="20px">
+                <p>FRENCH</p>
+            </div>
+
+        </div>
+        }
     </div>
-    <div class="notify-msg">
+    <div class="notify-msg" >
+        <button class="notification" (mouseover)="toggleDropdown(true)" (mouseleave)="toggleDropdown(false)">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-bell">
+                
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                <circle cx="20" cy="20" r="2" fill="red" class="blinking-dot" />
+            </svg>
+
+            @if (isactive){
+            <div #dropdown class="dropdown">
+                <p>Notification</p>
+                <a class="order">
+                    <img src="assets/shop-solid.svg" alt="shop" height="20px">
+                    <h4>Your Order Ready for Ship!</h4>
+                </a>
+                <a class="download">
+                    <img src="assets/download-solid.svg" alt="shop" height="20px">
+                    <h4>Download Complete</h4>
+                </a>
+                <a class="trash">
+                    <img src="assets/circle-exclamation-solid.svg" alt="shop" height="20px">
+                    <h4>250 MB trash Files!</h4>
+                </a>
+
+
+            </div>}
+
+        </button>
+        <button (click)="toggleChatBox()">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="feather feather-bell" _ngcontent-serverapp-c1626669388="">
-            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
-            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="feather feather-message-square" _ngcontent-serverapp-c1626669388="">
+            class="feather feather-message-square">
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            <circle cx="20" cy="20" r="2" fill="red" class="blinking-dot" />
+            
         </svg>
+    </button>
     </div>
     <div class="profile">
-        <img src="/assets/man.png" alt="pic" height="70px" width="80px" />
+        <div class="image-container">
+            <img src="/assets/man.png" alt="pic" height="70px" width="80px" (mouseover)="toggledrop(true)" (mouseleave)="toggledrop(false)"/>
+            <div class="blinking-dot"></div> </div>
+        @if (showmenu) {
+        <div class="p-dropdown">
+            <div class="edit">
+
+
+                <a routerLink="/profile">Edit Profile</a>
+
+
+
+                <a routerLink="/">Inbox</a>
+
+                <a routerLink="/">Lock Screen</a>
+            </div>
+            <div class="setting">
+                <a routerLink="/">Settings</a>
+                <a routerLink="/login">Log Out</a>
+            </div>
+        </div>
+        }
     </div>
 </header>

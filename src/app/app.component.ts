@@ -9,6 +9,7 @@ import { MenuService } from './services/menu.service';
 import { LoginComponent } from './components/pages/login/login.component';
 import { Router } from '@angular/router';
 import { RegisterComponent } from './components/pages/register/register.component';
+import { ChatboxComponent } from './components/chatbox/chatbox.component';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,8 @@ import { RegisterComponent } from './components/pages/register/register.componen
     HeaderComponent,
     MenuListComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ChatboxComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
