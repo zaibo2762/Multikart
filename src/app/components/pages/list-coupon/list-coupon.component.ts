@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FooterComponent } from '../../footer/footer.component';
 
 @Component({
   selector: 'app-list-coupon',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,FooterComponent],
   templateUrl: './list-coupon.component.html',
   styleUrl: './list-coupon.component.css',
 })
@@ -59,4 +60,5 @@ export class ListCouponComponent {
       color: 'gray',
     },
   ];
+  
 }

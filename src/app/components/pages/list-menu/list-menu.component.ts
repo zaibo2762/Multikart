@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { FooterComponent } from '../../footer/footer.component';
 
 @Component({
   selector: 'app-list-menu',
   standalone: true,
-  imports: [],
+  imports: [FooterComponent],
   templateUrl: './list-menu.component.html',
   styleUrl: './list-menu.component.css',
 })

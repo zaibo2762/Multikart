@@ -6,6 +6,7 @@ import { SalesInfoComponent } from './sales-info/sales-info.component';
 import { BuySellComponent } from './buy-sell/buy-sell.component';
 import { ProductCartComponent } from './product-cart/product-cart.component';
 import { EmployeeStatusComponent } from './employee-status/employee-status.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -18,6 +19,7 @@ import { EmployeeStatusComponent } from './employee-status/employee-status.compo
     BuySellComponent,
     ProductCartComponent,
     EmployeeStatusComponent,
+    FooterComponent
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css',

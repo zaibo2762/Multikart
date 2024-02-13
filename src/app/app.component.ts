@@ -21,7 +21,7 @@ import { ChatboxComponent } from './components/chatbox/chatbox.component';
     MenuListComponent,
     LoginComponent,
     RegisterComponent,
-    ChatboxComponent
+    ChatboxComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

@@ -1,9 +1,10 @@
 import { Component, ViewChild } from '@angular/core';
+import { FooterComponent } from '../../footer/footer.component';
 
 @Component({
   selector: 'app-media',
   standalone: true,
-  imports: [],
+  imports: [FooterComponent],
   templateUrl: './media.component.html',
   styleUrl: './media.component.css',
 })

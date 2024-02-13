@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { FooterComponent } from '../../footer/footer.component';
 
 @Component({
   selector: 'app-taxes',
   standalone: true,
-  imports: [],
+  imports: [FooterComponent],
   templateUrl: './taxes.component.html',
   styleUrl: './taxes.component.css',
 })

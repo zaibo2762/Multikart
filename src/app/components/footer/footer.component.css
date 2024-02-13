@@ -1,0 +1,18 @@
+.fotter {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 50px;
+    position: relative;
+    width: 1100px;
+    bottom:  0;
+    /* z-index: 1; */
+    left: 17.5%;
+    /* background-color: aqua; */
+    color: gray;
+  }
+  
+  
+  
